@@ -24,7 +24,7 @@ app.get("/", (req, res) => {
 //connection
 async function getConnection() {
   console.log("db connecting")
-  await mongoose.connect("mongodb+srv://devesh:devesh@cluster0.wqqtici.mongodb.net/");
+  await mongoose.connect("");
   console.log("db conne")
   console.log("db connected");
 }
