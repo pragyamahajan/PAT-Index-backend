@@ -25,7 +25,6 @@ app.get("/", (req, res) => {
 async function getConnection() {
   console.log("db connecting")
   await mongoose.connect("");
-  console.log("db conne")
   console.log("db connected");
 }
 mongoose.set("strictQuery", false);
