@@ -4,12 +4,10 @@ const Schema= mongoose.Schema
 const StudentSchema= new Schema({
     name:{type:String,require:true},
     rollNum:{type:String, require:true,unique: true},
-    section:{type:String,require:true},
     sub1:{type:String,default: '' },
     sub2:{type:String,default: ''},
     sub3:{type:String,default: ''},
     sub4:{type:String,default: ''},
-    sub5:{type:String,default: ''},
     // sub6:{type:String},
     // sub7:{type:String},
     // sub8:{type:String},
