@@ -86,15 +86,15 @@ console.log(token);
 
 app.post("/addresults", async (req, res) => {
   console.log(req.body);
-  const {name,rollNum,sub1,sub2,sub3,sub4}=req.body
+  const {name,rollNum,cgpa,proj,intern,leet}=req.body
   if(name!="",rollNum!=""){
     const results = await Student.create({
       name:name,
       rollNum:rollNum,
-      sub1:sub1,
-      sub2:sub2,
-      sub3:sub3,
-      sub4:sub4,
+      cgpa:cgpa,
+      proj:proj,
+      intern:intern,
+      leet:leet,
       date: new Date(),
     });
     console.log(results);
